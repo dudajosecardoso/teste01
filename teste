@@ -1,0 +1,35 @@
+quilometro = 0 
+litros = 0
+valor = 0
+
+opcao = 0
+
+while opcao != 4 :
+    quilometro = float(input("Digite quantos quilometros tem seu percurso:"))
+    print("Selecione o seu tipo de carro:")
+    print("1. A - 12km por litro")
+    print("2. B - 9km por litro")
+    print("3. C - 8km por litro")
+    print("4. D - sair")
+    opcao = input("Digite a sua opção:")
+    
+    if opcao == 1 :
+        litros = quilometro / 12
+        valor = litros * 7.15
+        print("Litros gastos na viagem:", litros)
+        print("Valor gasto nos litros:", valor)
+        
+    elif opcao == 2 :
+        litros = quilometro / 9 
+        valor = litros * 7.15
+        print("Litros gastos na viagem:", litros)
+        print("Valor gasto nos litros:", valor)
+        
+    elif opcao == 3 :
+        litros = quilometro / 8 
+        valor = litros * 7.15
+        print("Litros gastos na viagem:", litros)
+        print("Valor gasto nos litros", valor)
+        
+    elif opcao == 4 :
+        print("Volte sempre")
